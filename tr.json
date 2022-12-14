@@ -1,6 +1,6 @@
 {
     "cannot_buy_unit": {
-        "not_enough_money": "",
-        "selection_not_empty": ""
+        "not_enough_money": "Bir birim satın almaya veya yükseltmeye çalışınız",
+        "selection_not_empty": "Yeni bir birim almaya çalışınız"
     }
 }

@@ -1,6 +1,1015 @@
 {
-    "cannot_buy_unit": {
-        "not_enough_money": "You tried to buy or upgrade an unit, but you have only  gold, and an unit costs .",
-        "selection_not_empty": "You tried to buy a new unit, but you have a tower in your selection. Place your tower first."
+  "common": {
+    "server_url": "Server Address",
+    "refresh": "Refresh",
+    "username": "User Name",
+    "password": "Password",
+    "name": "Name",
+    "surname": "Surname",
+    "type": "Type",
+    "date": "Date",
+    "actions": "Actions",
+    "search": "Search",
+    "time_format": "HH:mm",
+    "date_format": "YYYY.MM.DD",
+    "date_format_short": "YY.MM.DD",
+    "datetime_format": "YYYY.MM.DD HH:mm",
+    "datetime_format_short": "YY.MM.DD HH:mm",
+    "units": {
+      "bytes": "bytes",
+      "packets": {
+        "0": "pkts",
+        "1": "k",
+        "2": "m",
+        "3": "b",
+        "4": "tri"
+      },
+      "data_rate": {
+        "0": "b/s",
+        "1": "kb/s",
+        "2": "Mb/s",
+        "3": "Gb/s",
+        "4": "Tb/s"
+      }
+    },
+    "buttons": {
+      "tools": {
+        "title": "Tools",
+        "icon": "icon-wrench"
+      },
+      "print": {
+        "title": "Print",
+        "icon": "fa fa-print",
+        "perm": "@print"
+      },
+      "export_pdf": {
+        "title": "Export to PDF",
+        "icon": "fa fa-file-pdf-o",
+        "perm": "@export_pdf"
+      },
+      "copy_clipboard": {
+        "title": "Copy to Clipboard",
+        "icon": "fa fa-files-o",
+        "perm": "@export_pdf"
+      },
+      "export_excel": {
+        "title": "Export to Excel",
+        "icon": "fa fa-file-excel-o",
+        "perm": "@export_excel"
+      },
+      "refresh": {
+        "title": "Refresh",
+        "icon": "icon-refresh",
+        "perm": "@refresh"
+      },
+      "close": {
+        "title": "Close",
+        "icon": "fa fa-times"
+      },
+      "clear": {
+        "title": "Clear",
+        "icon": "fa fa-times"
+      },
+      "logout": {
+        "title": "Logout",
+        "icon": "fa fa-sign-out"
+      },
+      "change_pwd": {
+        "title": "Change Password",
+        "icon": "fa fa-key"
+      },
+      "help": {
+        "title": "Help",
+        "icon": "fa fa-question"
+      },
+      "graph": "icon-graph",
+      "dropdown_icon": "fa fa-angle-down",
+      "list_icon": "fa fa-list-ul",
+      "eye_icon": {
+        "icon": "fa fa-eye",
+        "title": "Start Network Discovery"
+      },
+      "add_icon": "fa fa-plus-circle",
+      "level_up": {
+        "icon": "fa fa-level-up",
+        "title": "Get Central Network"
+      },
+      "toggle_physical_button_title": "Toggle Physical/Virtual Network"
+    },
+    "fields": {
+      "actions": "",
+      "actions_help": "This column contains actions that could be applicable to each row."
+    },
+    "messages": {
+      "RETURN_STATUS": {
+        "SUCCESS": "Operation succesfully completed.",
+        "ERROR": "Operation failed; \n{{message}}",
+        "SERVER_ERROR": "An error occured during operation.\n Please try again later.",
+        "ACCESS_DENIED": "You don\"t have permission for this operation.",
+        "ACCESS_LIMITED": "Access is limited for this operation, please try again later.",
+        "NOT_MODIFIED": "Data not modified.",
+        "NOT_IMPLEMENTED": "This operation is not supported.",
+        "DEPRECATED": "This operation is deprecated.",
+        "INVALID_SESSION": "Your session is terminated, please relogin."
+      },
+      "ERROR_CODES": {},
+      "return_home": "Home",
+      "idle_timeout": "You session will be locked in {{seconds}} seconds. Do you want to continue your session?",
+      "idle_timeout_title": "{{seconds}} seconds until log out ",
+      "no_tab": "Tab name is invalid or no tab is present at this time. Try clicking on a tab and refresh",
+      "data_load_error": "An error occured while loading data. Please try again later.",
+      "validation_error": "Form fields have some errors or they are empty. Please check your input.",
+      "ip_validation_error": "Please enter valid ip",
+      "ip_validation_error_without_subnet": "IP Address Is Not Valid.Please enter a valid ip without subnet",
+      "ip_validation_error_with_subnet": "IP Address Is Not Valid.Please enter a valid ip with subnet",
+      "ipv6_validation_error": "IPV6 Address Is Not Valid.Please enter a valid ip",
+      "save_error": "Please save new config.",
+      "same_ip_error": "relay server with the same ip already exists!",
+      "wan_selection_error": "Please select at least 2 local domains.",
+      "select_error": "At least one proposal required",
+      "certificate_error": "Please add certificate authorities",
+      "facility_error": "Please select facility",
+      "validation": {
+        "badInput": "Bad input.",
+        "patternMismatch": "Please enter appropriate value.",
+        "rangeOverflow": "You can enter at most '{{input.max}}' as a value.",
+        "rangeUnderflow": "You must enter at least '{{input.min}}' as a value.",
+        "stepMismatch": "Please enter appropriate step value.",
+        "tooLong": "You can enter at most {{input.maxLength}} characters.",
+        "tooShort": "You must enter at least {{input.minLength}} characters.",
+        "typeMismatch": "Please enter a valid \"{{input.type}}\" value.",
+        "valueMissing": "This field is required.",
+        "vl_minlength_error": "You must enter at least {{value}} characters.",
+        "vl_maxlength_error": "You can enter at most {{value}} characters.",
+        "pm_error": "Passwords do not match. Please check your password entries.",
+        "cm_error": "Password must be at least 6 characters in lenght and should contain at least 1 upper case, 1 lower case letter, 1 numerical value and 1 special character (!@#\\$%^&*).",
+        "ip_format_error": "Please enter a proper IP address",
+        "mac_format_error": "Enter proper mac address",
+        "mobile_phone_error": "Please enter a proper mobile phone number",
+        "datapath_error": "Please enter a correct data path"
+      },
+      "bandwidth_field_value_error_max": "Please enter a bandwidth value max 1.000.000 kbps",
+      "bandwidth_field_value_error_min": "Please enter a bandwidth value min 100 kbps",
+      "vlan_tag_value_error_max": "ID can\"t be bigger than 4096",
+      "switch_certificate_download": "Switch certificate download process has been started",
+      "controller_certificate_download": "Controller certificate download process has been started",
+      "ntp_save_success": "Ntp settings are successfully saved.",
+      "switch_certificate_confirm": "Are you sure to download the switch certificate?",
+      "unsaved_data": "You have unsaved changes, do you still want to continue?",
+      "json_parse_error": "JSON parse error, please fix the error and retry.",
+      "file_type_error": "JSON format error. Please upload a properly JSON formatted file",
+      "default_integer_range": "Integer fields must be between 1 and 2147483647"
+    },
+    "labels": {
+      "loading": "In progress, please wait...",
+      "VIRTUAL": "Virtual",
+      "PHYSICAL": "Physical",
+      "input_type": {
+        "color": "Color",
+        "date": "Date",
+        "datetime-local": "Date Time",
+        "email": "E-mail",
+        "month": "Month",
+        "number": "Number",
+        "range": "Range",
+        "tel": "Phone Number",
+        "time": "Time",
+        "url": "URL",
+        "week": "Week"
+      },
+      "add_to_list": "Add to List",
+      "new": "New",
+      "save": "Save"
+    },
+    "datatables": {
+      "zerorecords": "No data available in table",
+      "nomatch": "No matching records found",
+      "emptyTable": "No data available in table",
+      "loading": "Loading...",
+      "loadingRecords": "Loading...",
+      "first": "<span rel='tooltip' title='First'><i class=\"fa fa-step-backward\"></i></span>  ",
+      "first_notext": "<i class=\"fa fa-step-backward\"></i>",
+      "last": "<span rel='tooltip' title='Last'> <i class=\"fa fa-step-forward\"></i></span>",
+      "last_notext": "<i class=\"fa fa-step-forward\"></i>",
+      "prev_notext": "<i class=\"fa fa-chevron-left\"></i>",
+      "next_notext": "<i class=\"fa fa-chevron-right\"></i>",
+      "prev": "<i class=\"fa fa-chevron-left\"></i> Prev",
+      "next": "Next <i class=\"fa fa-chevron-right\"></i>",
+      "search": "<i class=\"fa fa-search\"></i>",
+      "lengthmenu": "_MENU_ ",
+      "info": "",
+      "infoFiltered": "(filtered from <span>_MAX_</span> total records)",
+      "infoEmpty": "",
+      "search_here": "Search here...",
+      "lengthMenu": {
+        "5": "5",
+        "10": "10",
+        "15": "15",
+        "20": "20",
+        "All": "-1"
+      },
+      "search_parse_error": "Syntax Error: Please check character at column {{error.location.start.column}}."
+    },
+    "datetimerangepicker": {
+      "locale": {
+        "format": "MM/DD/YYYY hh:mm",
+        "separator": " - ",
+        "applyLabel": "Apply",
+        "cancelLabel": "Clear",
+        "fromLabel": "From",
+        "toLabel": "To",
+        "customRangeLabel": "Custom",
+        "weekLabel": "W",
+        "daysOfWeek": [
+          "Su",
+          "Mo",
+          "Tu",
+          "We",
+          "Th",
+          "Fr",
+          "Sa"
+        ],
+        "monthNames": [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December"
+        ],
+        "firstDay": 1
+      },
+      "ranges": {
+        "today": "Today",
+        "yesterday": "Yesterday",
+        "last7days": "Last 7 Days",
+        "last30days": "Last 30 Days",
+        "thisMonth": "This Month",
+        "lastMonth": "Last Month"
+      }
     }
+  },
+  "dialogs": {
+    "types": {
+      "info": {
+        "title": "Info",
+        "icon": "fa fa-info-circle",
+        "color": "font-blue-steel"
+      },
+      "success": {
+        "title": "Success",
+        "icon": "fa fa-check-circle",
+        "color": "font-green-meadow bold"
+      },
+      "warning": {
+        "title": "Warning",
+        "icon": "fa fa-exclamation-triangle",
+        "color": "font-yellow-gold bold"
+      },
+      "error": {
+        "title": "Error",
+        "icon": "fa fa-exclamation-circle",
+        "color": "font-red-sunglo bold"
+      },
+      "question": {
+        "title": "Question",
+        "icon": "fa fa-question-circle",
+        "color": "font-blue-steel"
+      }
+    },
+    "actions": {
+      "ok": {
+        "title": "Ok",
+        "title_short": "Ok",
+        "icon": "fa fa-check-circle",
+        "color": "uppercase green-meadow",
+        "perm": "@ok"
+      },
+      "cancel": {
+        "title": "Cancel",
+        "title_short": "Cncl",
+        "icon": "fa fa-ban",
+        "color": "btn-outline lowercase red-sunglo",
+        "perm": "@cancel"
+      },
+      "abort": {
+        "title": "Abort",
+        "title_short": "Abrt",
+        "icon": "fa fa-times-circle",
+        "color": "btn-outline lowercase yellow-gold",
+        "perm": "@abort"
+      },
+      "yes": {
+        "title": "Yes",
+        "title_short": "Yes",
+        "icon": "fa fa-thumbs-up",
+        "color": "uppercase green-meadow",
+        "perm": "@yes"
+      },
+      "no": {
+        "title": "No",
+        "title_short": "No",
+        "icon": "fa fa-thumbs-down",
+        "color": "uppercase yellow-gold",
+        "perm": "@no"
+      },
+      "close": {
+        "title": "Close",
+        "title_short": "Cls",
+        "icon": "fa fa-times-circle",
+        "color": "btn-default",
+        "perm": "@close"
+      },
+      "save": {
+        "title": "Save",
+        "title_short": "Save",
+        "icon": "fa fa-floppy-o",
+        "color": "uppercase green-meadow",
+        "perm": "@save"
+      },
+      "change": {
+        "title": "Change",
+        "title_short": "Chng",
+        "icon": "fa fa-floppy-o",
+        "color": "uppercase yellow-gold",
+        "perm": "@change"
+      },
+      "add": {
+        "title": "Add",
+        "title_short": "Add",
+        "icon": "fa fa-plus",
+        "color": "uppercase yellow-gold",
+        "perm": "@save"
+      },
+      "send": {
+        "title": "Send",
+        "title_short": "send",
+        "icon": "fa fa-paper-plane",
+        "color": "uppercase green-meadow",
+        "perm": "@ok"
+      },
+      "start": {
+        "title": "Start",
+        "title_short": "start",
+        "icon": "fa fa-play",
+        "color": "uppercase green-meadow",
+        "perm": "@change"
+      }
+    }
+  },
+  "login": {
+    "title": "MAYA SD-WAN MANAGER",
+    "info": "Please login with your username and password.",
+    "remember_me": "Remember Me",
+    "rememberme": {
+      "label": "Remember Me",
+      "label_icon": "<i class=\"fa fa-bars\"></i>",
+      "placeholder": "",
+      "help_line": "",
+      "help_block": ""
+    },
+    "username": {
+      "label": "Username",
+      "placeholder": "Username..."
+    },
+    "password": {
+      "label": "Password",
+      "placeholder": "Password.."
+    },
+    "activeServerAddress": {
+      "label": "Active Server Address"
+    },
+    "serverAdress": {
+      "label": "Server Address",
+      "placeholder": "Server Address"
+    },
+    "forgot_password": "Forgot Password?",
+    "sign_in": "Login"
+  },
+  "top_menu": {
+    "dashboard": {
+      "title": "Monitoring",
+      "icon": "fa fa-share-alt",
+      "perm": "common:view"
+    },
+    "topology": {
+      "title": "Site Map",
+      "icon": "fa fa-wrench fa-sub fa-sub-gavel",
+      "perm": "moduleNodeConfig:view"
+    },
+    "logs": {
+      "title": "System Logs",
+      "icon": "fa fa-share-alt",
+      "perm": "logAnalyzer:view"
+    },
+    "controller_management": {
+      "controller_settings": {
+        "title": "Kontrolcü Ayarları",
+        "icon": "fa fa-wrench fa-sub fa-sub-gavel",
+        "perm": "moduleNodeConfig:view"
+      }
+    },
+    "management": {
+      "title": "Dashboard",
+      "icon": "fa fa-server",
+      "perm": "common:view"
+    }
+  },
+  "configuration": {
+    "title": "Configuration",
+    "icon": "fa fa-cloud",
+    "perm": "common:view",
+    "controller": {
+      "title": "SD-WAN Controller",
+      "icon": "fa fa-share-alt-square",
+      "perm": "common:view",
+      "controller_tls": {
+        "title": "Controller Certificate",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      }
+    },
+    "cpe": {
+      "title": "Edge Device",
+      "icon": "fa fa-share-alt-square",
+      "perm": "common:view",
+      "cpe_device": {
+        "title": "CPE Definition",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      }
+    },
+    "group": {
+      "title": "Group",
+      "icon": "fa fa-share-alt-square",
+      "perm": "common:view",
+      "create_group": {
+        "title": "Group Description",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      }
+    },
+    "ztp": {
+      "title": "ZTP Server",
+      "icon": "fa fa-share-alt-square",
+      "perm": "common:view",
+      "setup_mail": {
+        "title": "Setup Mail",
+        "perm": "common:view"
+      },
+      "pending_device": {
+        "title": "Pending Device",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      },
+      "registered_device": {
+        "title": "Registered Device",
+        "icon": "fa fa-plug",
+        "perm": "common:view"
+      },
+      "flavor": {
+        "title": "Flavors",
+        "icon": "fa fa-paint-brush",
+        "perm": "common:view"
+      },
+      "image": {
+        "title": "Images",
+        "icon": "fa fa-download",
+        "perm": "common:view"
+      },
+      "vnf": {
+        "title": "Virtual Functions",
+        "icon": "fa fa-mixcloud",
+        "perm": "common:view"
+      },
+      "device_export": {
+        "title": "Export Devices",
+        "icon": "fa fa-info-circle",
+        "perm": "common:view"
+      }
+    },
+    "templates": {
+      "title": "Overlay Templates",
+      "icon": "fa fa-share-alt-square",
+      "perm": "common:view",
+      "create_tunnel": {
+        "title": "Overlay Tunnel",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      },
+      "flow_sfc": {
+        "title": "SFC ",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      },
+      "flow_action": {
+        "title": "Traffic Action",
+        "icon": "fab fa-artstation",
+        "perm": "common:view"
+      },
+      "enduser_app": {
+        "title": "User Application",
+        "icon": "fab fa-artstation",
+        "perm": "common:view"
+      },
+      "flow_template": {
+        "title": "Traffic Rule",
+        "icon": "fa fa-qrcode",
+        "perm": "common:view"
+      },
+      "cpe_type_definition": {
+        "title": "Device Type",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      },
+      "dpdk_version": {
+        "title": "DPDK Version",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      },
+      "multicast": {
+        "title": "Multicast",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      }
+    },
+    "vnf": {
+      "title": "VNF",
+      "icon": "fa fa-share-alt-square",
+      "perm": "common:view",
+      "create_dhcp": {
+        "title": "Create DHCP Server",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      },
+      "nfv": {
+        "title": "Network Functions",
+        "icon": "fa fa-empire",
+        "perm": "common:view"
+      },
+      "vnf_template": {
+        "title": "VNF Template",
+        "icon": "fa fa-empire",
+        "perm": "common:view"
+      },
+      "create_function_type": {
+        "title": "Function Type",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      },
+      "create_function_definition": {
+        "title": "VNF Configuration",
+        "icon": "fa fa-connectdevelop",
+        "perm": "common:view"
+      },
+      "create_cpe_relation": {
+        "title": "Template Relation",
+        "icon": "fa fa-connectdevelop",
+        "perm": "common:view"
+      },
+      "vnf_bundleList_title": {
+        "title": "VNF Bundle List",
+        "icon": "fa fa-connectdevelop",
+        "perm": "common:view"
+      },
+      "vnf_cli_template": {
+        "title": "CLI Template",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      },
+      "vnf_cli_variable_template": {
+        "title": "Template Variables",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      },
+      "vnf_template_objects": {
+        "title": "Template Objects",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      },
+      "image_template": {
+        "title": "Image Template",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      },
+      "vnf_templates": {
+        "title": "VNF Templates",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      }
+    },
+    "alarm": {
+      "title": "Alarm & Event",
+      "icon": "fa fa-share-alt-square",
+      "perm": "common:view"
+    }
+  },
+  "vnf": {
+    "dhcp": {
+      "title": "DHCP Server",
+      "icon": "fa fa-share-alt-square",
+      "perm": "common:view"
+    },
+    "routing": {
+      "title": "Routing",
+      "icon": "fa fa-share-alt-square",
+      "perm": "common:view",
+      "general_route": {
+        "title": "Routing Table",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      },
+      "static_route": {
+        "title": "Static Route",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      },
+      "bgp": {
+        "title": "BGP",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      },
+      "ospf": {
+        "title": "OSPF",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      },
+      "route_policy": {
+        "title": "Route Policy",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      },
+      "isis": {
+        "title": "Isis",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      },
+      "route_map": {
+        "title": "Routemap Policy",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      }
+    },
+    "nat": {
+      "title": "NAT",
+      "icon": "fa fa-sitemap",
+      "perm": "common:view",
+      "sourcenat": {
+        "title": "Source NAT",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      },
+      "onetoonenat": {
+        "title": "1-to-1 NAT",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      },
+      "destinationnat": {
+        "title": "Destination NAT",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      }
+    },
+    "vpn": {
+      "title": "VPN",
+      "icon": "fa fa-lock",
+      "perm": "common:view",
+      "ipsec": {
+        "title": "IPSEC",
+        "icon": "fa fa-lock",
+        "perm": "common:view"
+      },
+      "gre_tunnel": {
+        "title": "GRE TUNNEL",
+        "icon": "fas fa-archway",
+        "perm": "common:view"
+      },
+      "ssl_vpn": {
+        "title": "SSL VPN",
+        "icon": "fas fa-archway",
+        "perm": "common:view"
+      },
+      "vpn_objects": {
+        "title": "VPN Objects",
+        "icon": "fa fa-shield",
+        "perm": "common:view"
+      }
+    },
+    "interface": {
+      "title": "Interfaces",
+      "icon": "fa fa-window-restore",
+      "perm": "common:view",
+      "interface_status": {
+        "title": "Interface Status",
+        "icon": "fa fa-window-restore",
+        "perm": "common:view"
+      },
+      "ifb_create": {
+        "title": "Ifb(Input Interface)",
+        "icon": "fa fa-window-restore",
+        "perm": "common:view"
+      }
+    },
+    "firewall": {
+      "title": "Firewall ",
+      "icon": "fa fa-fire",
+      "perm": "common:view",
+      "rules": {
+        "title": "Policy Rules",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      },
+      "policy_objects": {
+        "title": "Policy Objects",
+        "icon": "fa fa-shield",
+        "perm": "common:view",
+        "address_group": {
+          "title": "Policy Objects",
+          "icon": "fa fa-shield",
+          "perm": "common:view"
+        },
+        "network_group": {
+          "title": "Policy Objects",
+          "icon": "fa fa-shield",
+          "perm": "common:view"
+        },
+        "protocol_group": {
+          "title": "Policy Objects",
+          "icon": "fa fa-shield",
+          "perm": "common:view"
+        },
+        "zone": {
+          "title": "Policy Objects",
+          "icon": "fa fa-shield",
+          "perm": "common:view"
+        }
+      }
+    },
+    "dhcp_tabs": {
+      "title": "DHCP",
+      "icon": "fa fa-cog",
+      "perm": "common:view",
+      "dhcp_server": {
+        "title": "DHCP Server",
+        "icon": "fa fa-cog",
+        "perm": "common:view"
+      },
+      "dhcp_lease": {
+        "title": "DHCP Lease",
+        "icon": "fa fa-cog",
+        "perm": "common:view"
+      },
+      "dhcp_relay": {
+        "title": "DHCP Relay",
+        "icon": "fa fa-cog",
+        "perm": "common:view"
+      }
+    },
+    "service": {
+      "title": "Service ",
+      "icon": "fa fa-cog",
+      "perm": "common:view",
+      "proxy_tabs": {
+        "title": "Proxy",
+        "icon": "fa fa-cog",
+        "perm": "common:view"
+      },
+      "wpad": {
+        "title": "Whitelist Settings",
+        "icon": "fa fa-cog",
+        "perm": "common:view"
+      },
+      "url_filtering": {
+        "title": "URL Filter Settings",
+        "icon": "fa fa-cog",
+        "perm": "common:view"
+      },
+      "rule_config": {
+        "title": "Rule Configuration",
+        "icon": "fa fa-cog",
+        "perm": "common:view"
+      },
+      "web_proxy": {
+        "title": "Web Proxy",
+        "icon": "fa fa-cog",
+        "perm": "common:view"
+      }
+    },
+    "qos": {
+      "title": "QoS ",
+      "icon": "fa fa-cog",
+      "perm": "common:view",
+      "qos_tabs": {
+        "title": "Traffic Policy",
+        "icon": "fa fa-cog",
+        "perm": "common:view"
+      },
+      "round_robin": {
+        "title": "Round Robin",
+        "icon": "fa fa-cog",
+        "perm": "common:view"
+      },
+      "traffic_shaper": {
+        "title": "Traffic Shaper",
+        "icon": "fa fa-cog",
+        "perm": "common:view"
+      },
+      "rate_control": {
+        "title": "Rate Control",
+        "icon": "fa fa-cog",
+        "perm": "common:view"
+      },
+      "priority_queue": {
+        "title": "Priority Queue",
+        "icon": "fa fa-cog",
+        "perm": "common:view"
+      },
+      "limiter": {
+        "title": "Traffic Limiter",
+        "icon": "fa fa-cog",
+        "perm": "common:view"
+      }
+    },
+    "wanLb": {
+      "title": "Load Balancing ",
+      "icon": "fa fa-cog",
+      "perm": "common:view",
+      "wanLb_tabs": {
+        "title": "Load Balancing",
+        "icon": "fa fa-cog",
+        "perm": "common:view"
+      },
+      "interface_health": {
+        "title": "Interface Health",
+        "icon": "fa fa-cog",
+        "perm": "common:view"
+      },
+      "wanLb_rules": {
+        "title": "WANLB Rules",
+        "icon": "fa fa-cog",
+        "perm": "common:view"
+      },
+      "lbOpt": {
+        "title": "LB Options",
+        "icon": "fa fa-cog",
+        "perm": "common:view"
+      }
+    },
+    "flowAccounting": {
+      "title": "Flow Accounting ",
+      "icon": "fa fa-cog",
+      "perm": "common:view",
+      "accounting": {
+        "title": "Flow Accounting",
+        "icon": "fa fa-window-restore",
+        "perm": "common:view"
+      }
+    },
+    "log_management": {
+      "title": "Log Management",
+      "icon": "fa fa-cog",
+      "perm": "common:view",
+      "syslog": {
+        "title": "Syslog",
+        "icon": "fa fa-window-restore",
+        "perm": "common:view"
+      }
+    },
+    "dpi_management": {
+      "title": "DPI Management",
+      "icon": "fa fa-random",
+      "perm": "common:view",
+      "dpi_class": {
+        "title": "DPI Class",
+        "icon": "fa fa-random",
+        "perm": "common:view"
+      },
+      "dpi": {
+        "title": "DPI",
+        "icon": "fa fa-random",
+        "perm": "common:view"
+      }
+    },
+    "ntp": {
+      "title": "NTP",
+      "icon": "fa fa-share-alt-square",
+      "perm": "common:view",
+      "ntp_pages": {
+        "title": "Server",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      },
+      "ntp_objects": {
+        "title": "NTP Objects",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      }
+    },
+    "snmp": {
+      "title": "SNMP",
+      "icon": "fa fa-share-alt-square",
+      "perm": "common:view",
+      "snmp": {
+        "title": "SNMP",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      }
+    },
+    "ips/ids": {
+      "title": "IPS/IDS",
+      "icon": "fa fa-share-alt-square",
+      "perm": "common:view",
+      "ips/ids": {
+        "title": "Interface List",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      },
+      "blocks": {
+        "title": "Blocks",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      },
+      "alerts": {
+        "title": "Alerts",
+        "icon": "fa fa-share-alt-square",
+        "perm": "common:view"
+      }
+    }
+  },
+  "setting": {
+    "title": "Settings",
+    "icon": "fa fa-share-alt",
+    "perm": "common:view",
+    "ntp_settings": {
+      "title": "NTP",
+      "icon": "fa fa-share-alt-square",
+      "perm": "common:view"
+    }
+  },
+  "maintenance": {
+    "title": "Maintenance",
+    "icon": "fa fa-share-alt",
+    "perm": "common:view"
+  },
+  "events": {
+    "title": "Alarm & Events",
+    "icon": "fa fa-share-alt",
+    "perm": "common:view",
+    "notifications": {
+      "title": "Alarm Notifications",
+      "icon": "fa fa-flag",
+      "perm": "common:view"
+    },
+    "alarm_settings": {
+      "title": "Alarm Settings",
+      "icon": "fa fa-wrench fa-sub fa-sub-bell",
+      "perm": "moduleNodeConfig:list"
+    },
+    "alarms": {
+      "title": "Alarm",
+      "icon": "fa fa-flag",
+      "perm": "common:view"
+    },
+    "alarm_events": {
+      "title": "Alarm Events",
+      "icon": "fa fa-wrench fa-sub fa-sub-bell",
+      "perm": "moduleNodeConfig:view"
+    },
+    "alarm_logs": {
+      "title": "Alarm Logs",
+      "icon": "fa fa-wrench fa-sub fa-sub-bell",
+      "perm": "moduleNodeConfig:view"
+    },
+    "alarm_sources": {
+      "title": "Alarm Sources",
+      "icon": "fa fa-wrench fa-sub fa-sub-bell",
+      "perm": "moduleNodeConfig:view"
+    }
+  },
+  "users": {
+    "title": "Users & Roles",
+    "icon": "fa fa-share-alt",
+    "perm": "common:view",
+    "create_user": {
+      "title": "Users",
+      "icon": "fa fa-share-alt-square",
+      "perm": "common:view"
+    },
+    "role": {
+      "title": "Roles",
+      "icon": "fa fa-share-alt-square",
+      "perm": "common:view"
+    },
+    "tenant": {
+      "title": "Tenants",
+      "icon": "fa fa-share-alt-square",
+      "perm": "common:view"
+    }
+  }
 }

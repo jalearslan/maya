@@ -1,1 +1,6 @@
-{}
+{
+    "common": {
+        "refresh": "Yenile",
+        "server_url": "Sunucu Adresi"
+    }
+}

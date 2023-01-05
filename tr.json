@@ -1,6 +1,7 @@
 {
     "common": {
         "refresh": "Yenile",
-        "server_url": "Sunucu Adresi"
+        "server_url": "Sunucu Adresi",
+        "username": "kullanıcı adı"
     }
 }

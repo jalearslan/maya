@@ -2,6 +2,7 @@
     "common": {
         "refresh": "Yenile",
         "server_url": "Sunucu Adresi",
-        "username": "kullanıcı adı"
+        "username": "kullanıcı adı",
+        "password": "şifre"
     }
 }
